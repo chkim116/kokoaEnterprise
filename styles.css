@@ -105,7 +105,7 @@ li {
 }
 
 .content__item {
-    width: 33.3%;
+    width: 31%;
     display: flex;
     flex-direction: column;
     
@@ -115,6 +115,7 @@ li {
 .content__item:nth-child(5),
 .content__item:nth-child(6) {
     margin-top: 60px;
+    
 }
 
 .item__desc {
@@ -124,6 +125,7 @@ li {
 
 .content_item-text {
     margin-top: 7px;
+    margin-bottom: 7px;
     font-size: 14px;
     font-weight: 700;
     color: #666666;
@@ -132,7 +134,6 @@ li {
 .content_item-title {
     font-weight: 700;
     font-size: 20px;
-    margin: 0;
 }
 
 .content__img {
@@ -140,7 +141,6 @@ li {
     height: auto;
     margin-bottom: 10px;
     border-radius: 9px;
-    padding-right: 40px;
 }
 
 .content__click,
