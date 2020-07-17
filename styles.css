@@ -277,8 +277,8 @@ li {
     cursor: pointer;
 }
 .btn_relation {
-    all:unset;
-    background-color: none;
+    background-color: #ffffff;
+    outline: none;
     border: none;
     color:#777;
     font-weight: 600;
@@ -304,10 +304,12 @@ li {
 .relation__list {
     border: 1px solid #d4d4d4;
     position: absolute;
+    font-weight: 600;
+    color:#777;
     top:-300%;
-    right: 2%;
+    right: 4%;
     text-align: left;
-    padding: 11px;
+    padding: 5px 11px;
     background-color: #ffffff;
     display: none;
 }
