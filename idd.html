@@ -31,6 +31,7 @@
             list-style: none;
         }
 
+        /* 넷바 */
         #nav {
             width: 100%;
             display: flex;
@@ -51,6 +52,14 @@
             columns: #333333;
         }
       
+        .navright > i {
+            border-radius: 50%;
+            background-color: #3498db;
+            color:white;
+            border: 1px solid #3498db;
+        }
+
+        /* 영상 삽입 */
         #article {
             position: relative;
             width: 100%;
@@ -245,7 +254,7 @@
            <div class=navbar> <a href=""> 기술블로그</div></a>
            <div class=navbar> <a href=""> 제휴문의</div></a>
         </div>
-        <a href=""><span class="navright">인재영입></span></a>
+        <a href=""><span class="navright">인재영입<i class="far fa-arrow-alt-circle-right"></i></span></a>
     </nav>
     <section id="section">
         <article id=article>
