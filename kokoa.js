@@ -88,14 +88,3 @@ function showList () {
 }
 
 relBtn.addEventListener("click", showList);
-
-
-// 넷바 고정 시키기 스크롤하면 흰색 배경 나타내기.
-// 넷바 마우스 가져대면 상세메뉴 나타나기
-
-
-// 메인 영상에 시간 간격맞춰서 글자 슬라이드하기
-
-
-// 관련 사이트 목록 추가
-
