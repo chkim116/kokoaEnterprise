@@ -277,6 +277,8 @@ li {
 }
 .btn_relation {
     all:unset;
+    background-color: none;
+    border: none;
     color:#777;
     font-weight: 600;
     font-size: 12px;
@@ -301,12 +303,16 @@ li {
 .relation__list {
     border: 1px solid #d4d4d4;
     position: absolute;
-    top:-220%;
+    top:-300%;
     right: 2%;
     text-align: left;
     padding: 11px;
     background-color: #ffffff;
     display: none;
+}
+
+.relation__list.showing {
+    display: block;
 }
 
 .relation__site {

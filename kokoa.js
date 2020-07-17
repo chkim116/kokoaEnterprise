@@ -78,6 +78,18 @@ for (i=0; i < navbarMenu.length; i++) {
 }
 
 
+// 푸터 관련사이트 버튼
+const relBtn = document.querySelector(".btn_relation");
+const relList = document.querySelector(".relation__list");
+const SHOWING = "showing";
+
+function showList () {
+    relList.classList.toggle(SHOWING);
+}
+
+relBtn.addEventListener("click", showList);
+
+
 // 넷바 고정 시키기 스크롤하면 흰색 배경 나타내기.
 // 넷바 마우스 가져대면 상세메뉴 나타나기
 
