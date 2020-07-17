@@ -8,9 +8,10 @@
 body {
     min-width: 1440px;
 }
+
 a {
     text-decoration: transparent;
-    color: black;
+    color: #353b48;
 }
 
 b {
@@ -23,19 +24,26 @@ h3 {
 
 li {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 /* 넷바 */
+
 #nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
     min-width: 1440px;
     width: 100%;
-    display: flex;
-    justify-content: space-around;
-    height: 60px;
     line-height: 60px;
-    position: fixed;
     font-weight: 600;
+    font-size: 16px;
     z-index: 1;
+}
+
+.logo {
+    margin-left: 80px;
 }
 
 .navbar_menu {
@@ -43,18 +51,57 @@ li {
 }
 
 .navbar {
-    font-size: 16px;
-    padding: 0 35px;
-    columns: #333333;
     cursor: pointer;
+    text-align: center;
+    width: 135px;
 }
 
-.navright > i {
+.navbar > a,
+.navright {
+    padding: 16px 0;
+}
+
+.navbar > a:hover,
+.navright:hover {
+    border-bottom: 2px solid blue;
+}
+
+.navbar__scroll {
+    background-color: #ffffff;
+    color: #333333;
+    transition: all 700ms ease;
+}
+
+.fa-arrow-alt-circle-right {
     border-radius: 50%;
     background-color: #3498db;
     color:white;
     border: 1px solid #3498db;
     margin-left: 5px;
+    margin-right: 80px;
+}
+
+/* 넷바 서브 */
+
+.wrap__sub {
+    display: none;
+    padding: 0;
+    padding-bottom: 30px;
+}
+
+.navbar__sub {
+    font-size: 13px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.navbar__sub > a:hover {
+    text-decoration: underline;
+    color: #3498db;
+}
+
+.wrap__sub.sub__showing {
+    display: block;
 }
 
 /* 영상 삽입 */
@@ -68,7 +115,6 @@ li {
 .inner__video {
     position: absolute;
     top: 0;
-    object-fit: contain;
     z-index: -1;
     height: auto;
     width: 100%;
@@ -80,13 +126,24 @@ li {
     left: 15%;
 }
 
-.item__text.text__visual {
-    display: block;
-    z-index: 0;
-}
 .item__text {
-    display: none;
-    font-size: 30px
+    position: relative;
+    width: 100%;
+    opacity: 0;
+    transform: translateY(-60px);
+    transition: all 400ms ease;
+    font-size: 30px;
+}
+
+.item__text.text__visual {
+    font-size: 30px;
+}
+.text__visual {
+    top: 0;
+    opacity: 1;
+    position: absolute;
+    transform: translateY(0px);
+    z-index: 0;
 }
 
 .title_text {
@@ -105,6 +162,7 @@ li {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 0 auto;
 }
 
 .content__item {
@@ -127,8 +185,7 @@ li {
 }
 
 .content_item-text {
-    margin-top: 7px;
-    margin-bottom: 7px;
+    margin: 7px 0;
     font-size: 14px;
     font-weight: 700;
     color: #666666;
