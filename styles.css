@@ -1,0 +1,244 @@
+* {
+    box-sizing: border-box;
+    letter-spacing: -0.25px;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0;
+}
+
+body {
+    min-width: 1440px;
+}
+a {
+    text-decoration: transparent;
+    color: black;
+}
+
+b {
+    font-weight:bolder;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+/* 넷바 */
+#nav {
+    min-width: 1440px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 60px;
+    line-height: 60px;
+    position: fixed;
+    font-weight: 600;
+}
+
+.navbar_menu {
+    display: flex;
+}
+
+.navbar {
+    font-size: 16px;
+    padding: 0 35px;
+    columns: #333333;
+}
+
+.navright > i {
+    border-radius: 50%;
+    background-color: #3498db;
+    color:white;
+    border: 1px solid #3498db;
+}
+
+/* 영상 삽입 */
+#article {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 38.26%;
+}
+
+.inner__video {
+    position: absolute;
+    top: 0;
+    object-fit: contain;
+    z-index: -1;
+    height: auto;
+    width: 100%;
+}
+
+.iist__visual {
+    position: absolute;
+    top: 33%;
+    left: 15%;
+}
+
+.item__text.text__visual {
+    display: block;
+    z-index: 0;
+}
+.item__text {
+    display: none;
+    font-size: 30px
+}
+
+.title_text {
+    line-height: 80px;
+    font-weight: 900;
+    color: #353b48;
+    text-shadow: 0.5px 0.7px black;
+}
+
+/* 컨텐츠 */
+
+#content {
+    width: 100%;
+    padding: 30px 80px 160px 80px;
+    max-width: 1920px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.content__item {
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.content__item:nth-child(4),
+.content__item:nth-child(5),
+.content__item:nth-child(6) {
+    margin-top: 60px;
+}
+
+.item__desc {
+    font-size: 15px;
+    margin-top: 12px;
+}
+
+.content_item-text {
+    margin-top: 7px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #666666;
+}
+
+.content_item-title {
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0;
+}
+
+.content__img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 9px;
+    padding-right: 40px;
+}
+
+.content__click,
+.content__img {
+    cursor: pointer;
+}
+
+/* 푸터 info및 어드레스 */
+#footer {
+    width: 100%;
+    display: flex;
+    position: relative;
+    border-top: 1px solid #dcdde1;
+    color: #b1b1b1;
+}
+
+.inner__footer {
+    padding: 0 60px;
+    padding-bottom: 10px;
+    margin:0px;
+}
+
+.list__info {
+    padding-top: 15px;
+    font-size: 12px;
+    font-weight: 700;
+    display: flex;
+}
+
+.link__footer {
+    color:#777;
+}
+
+.link__footer:hover {
+    color:#333333
+}
+
+.link__footer::after {
+    content: "|";
+    margin: 0 6px;
+}
+
+.list__address {
+    font-size: 12px;
+    margin-top: 15px;
+    display: flex;
+}
+
+.list__address::after {
+    padding: 0 5px;
+    content: "| " " dudnqnfqlc@naver.com";
+}
+
+/* 푸터 관련사이트 */
+
+.wrap__relation {
+    display: flex;
+    position: absolute;
+    top: 35%;
+    right: 9%;
+    font-size: 25px;
+}
+.icon__info {
+    display: flex;
+}
+.icon__info-items {
+    padding: 10px 30px 10px 0;
+}
+
+.icon__info-items > i {
+    cursor: pointer;
+}
+.btn_relation {
+    all:unset;
+    color:#777;
+    font-weight: 600;
+    font-size: 12px;
+    padding-top: 20px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid black; 
+    cursor: pointer;
+}
+
+.btn_relation > i {
+    padding-left: 70px;
+
+}
+
+.btn_relation:hover {
+    color:black
+}
+
+.relation__site {
+    display: none;
+}
+
+/* 미디어쿼리 */
+
+@media all and (max-width:768px) {
+
+}
