@@ -261,9 +261,10 @@ li {
     display: flex;
     position: absolute;
     top: 35%;
-    right: 9%;
+    right: 7%;
     font-size: 25px;
 }
+ 
 .icon__info {
     display: flex;
 }
@@ -280,10 +281,13 @@ li {
     font-weight: 600;
     font-size: 12px;
     padding-top: 20px;
+    margin-left: 20PX;
     padding-bottom: 7px;
     border-bottom: 1px solid black; 
     cursor: pointer;
+    position: relative;
 }
+
 
 .btn_relation > i {
     padding-left: 70px;
@@ -294,8 +298,22 @@ li {
     color:black
 }
 
-.relation__site {
+.relation__list {
+    border: 1px solid #d4d4d4;
+    position: absolute;
+    top:-220%;
+    right: 2%;
+    text-align: left;
+    padding: 11px;
+    background-color: #ffffff;
     display: none;
+}
+
+.relation__site {
+    font-size: 12px;
+    line-height: 30px;
+    padding-right: 14px;
+    color:#333333;
 }
 
 /* 미디어쿼리 */
