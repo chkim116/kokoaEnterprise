@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            letter-spacing: -0.25px;
+            font-family: 'Noto Sans KR', sans-serif;
+            margin: 0;
+        }
+ 
+        a {
+            text-decoration: transparent;
+            color: black;
+        }
+
+        b {
+            font-weight:bolder;
+        }
+        
+        h3 {
+            font-size: 20px;
+        }
+
+        #nav {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            height: 60px;
+            line-height: 60px;
+            position: fixed;
+            font-weight: 600;
+        }
+       
+        .navbar_menu {
+            display: flex;
+        }
+        
+        .navbar {
+            font-size: 16px;
+            padding: 0 35px;
+            columns: #333333;
+        }
+      
+        #article {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            padding-top: 38.26%;
+        }
+
+        .inner__video {
+            position: absolute;
+            top: 0;
+            object-fit: contain;
+            z-index: -1;
+            height: auto;
+            width: 100%;
+        }
+
+        .iist__visual {
+            position: absolute;
+            top: 33%;
+            left: 15%;
+        }
+
+        .item__text.text__visual {
+            display: block;
+            z-index: 0;
+        }
+        .item__text {
+            display: none;
+            list-style: none;
+            font-size: 30px
+        }
+
+        .title_text {
+            line-height: 80px;
+            font-weight: 900;
+            color: #353b48;
+            text-shadow: 0.5px 0.7px black;
+        }
+        
+        /* 컨텐츠 */
+
+        #content {
+            width: 100%;
+            padding: 30px 80px 160px 80px;
+            max-width: 1920px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .content__item {
+            width: 33.3%;
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+        .content__item:nth-child(4),
+        .content__item:nth-child(5),
+        .content__item:nth-child(6) {
+            margin-top: 60px;
+        }
+
+        .item__desc {
+            font-size: 15px;
+            margin-top: 12px;
+        }
+        
+        .content_item-text {
+            margin-top: 7px;
+            font-size: 14px;
+            font-weight: 700;
+            color: #666666;
+        }
+
+        .content_item-title {
+            font-weight: 700;
+            font-size: 20px;
+            margin-top: 15px;
+        }
+
+        .content__img {
+            width: 100%;
+            height: auto;
+            border-radius: 9px;
+            padding-right: 40px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav id="nav">
+       <a href="" class="logo"> kokoa<b>enterprise</b></a>
+       <div class="navbar_menu">
+           <div class=navbar> <a href="">소개</div></a>
+           <div class=navbar> <a href=""> 새소식</div></a>
+           <div class=navbar> <a href=""> 서비스</div></a>
+           <div class=navbar> <a href=""> 기술</div></a>
+           <div class=navbar> <a href=""> 기술블로그</div></a>
+           <div class=navbar> <a href=""> 제휴문의</div></a>
+        </div>
+        <a href=""><span class="navright">인재영입></span></a>
+    </nav>
+    <section id="section">
+        <article id=article>
+            <video src="videos/Pexels Videos 1570919.mp4" class="inner__video" autoplay loop muted></video>
+            <ul class="iist__visual">
+                <li class="item__text text__visual">
+                    <h2 class="title_text">I never dreamed about success I worked for it.</h2>
+                    <p class="title_text">- Estee Iauder</p>
+                </li>
+                <li class="item__text ">
+                    <p class="title_text">Do not try to be original, just try to be good.</p>
+                    <p class="title_text">- Paul Rand</p>
+                </li>
+                <li class="item__text">
+                    <p class="title_text">Do not be afraid to give up the good to go for the great.</p>
+                    <p class="title_text">- John D.Rockfeller</p>
+                </li>
+                <li class="item__text ">
+                    <p class="title_text">If you really want to do something, you'll find a way, if you do not, you'll find an excuse.</p>
+                    <p class="title_text">- Jim Rohn</p>
+                </li>
+            </ul>
+        </article>
+        <content id="content">
+            <div class="news content__item">
+                <p class="content_item-text" >NEWS</p>
+                <p class="content_item-title">코코아엔터프라이즈</p>
+                <P class="item__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, magnam?</P>
+            </div>
+
+            <div class="company content__item">
+                <p class="content_item-text">COMPANY</p>
+                <p class="content_item-title">Why not?</p>
+                <P class="item__desc">당연한 것들에 대한 도전</P>
+            </div>
+
+            <div class="partnership content__item">
+                <p class="content_item-text">PARTNERSHIP</p>
+                <p class="content_item-title">코코아는 더 나은 미래를 향해 질주합니다.</p>
+            </div>
+
+            <div class="service content__item">
+                <p class="content_item-text">SERVICE</p>
+                <img src="images/invite.jpg" class="content__img">
+                <p class="content_item-title">더 심플해진 일상으로의 초대</p>
+                <P class="item__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, magnam?</P>    
+            </div>
+            
+            <div class="tech content__item">
+                <p class="content_item-text">TECH</p>
+                <img src="images/carl-heyerdahl-KE0nC8-58MQ-unsplash.jpg" class="content__img">
+                <p class="content_item-title">코코아의 핵심기술, Kokoa B</p>
+                <P class="item__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, magnam?</P>    
+            </div>
+
+            <div class="careers content__item">
+                <p class="content_item-text">CAREERS</p>
+                <img src="images/crew.jpg" class="content__img">
+                <p class="content_item-title">새로운 길을 개척할 크루를 기다립니다.</p>
+                <P class="item__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, magnam?</P>
+             </div>
+
+        </content>
+    </section>
+        
+
+</body>
+</html>
