@@ -129,23 +129,36 @@ li {
 }
 
 .item__text {
-    position: relative;
-    width: 100%;
+    width: 1000px;
     opacity: 0;
-    transform: translateY(-60px);
-    transition: all 400ms ease;
+    top:0;
     font-size: 30px;
+    position: absolute;
+    animation-name: text;
 }
 
-.item__text.text__visual {
-    font-size: 30px;
-}
 .text__visual {
-    top: 0;
-    opacity: 1;
-    position: absolute;
+    font-size: 30px;
+    top:0;
     transform: translateY(0px);
+    animation-name: moving;
+    animation-duration: 4000ms;
     z-index: 0;
+}
+
+@keyframes moving {
+    0% {
+        opacity: 0;
+        transform: translateY(60px);
+    }
+    60% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-60px);
+    }
 }
 
 .title_text {

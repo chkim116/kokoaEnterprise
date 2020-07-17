@@ -20,7 +20,7 @@ function textShow() {
 }
 
 textShow();
-setInterval(textShow, 3400);
+setInterval(textShow, 4000);
 
 // 넷바고정
 const navbar = document.querySelector("#nav");
@@ -66,7 +66,9 @@ function downSub() {
         }
     })
 }
-
+function showBar() {
+    nav.style.backgroundColor = "white";
+}
 function downBar() {
     nav.style.backgroundColor = "";
 }
@@ -74,7 +76,8 @@ function downBar() {
 for (i=0; i < navbarMenu.length; i++) {
     navbarMenu[i].addEventListener("mouseover", showSub);
     navbarMenu[i].addEventListener("mouseleave", downSub);
-    nav.addEventListener("mouseleave", downBar)
+    nav.addEventListener("mouseover", showBar);
+    nav.addEventListener("mouseleave", downBar);
 }
 
 
