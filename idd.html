@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>코코아엔터프라이즈</title>
     <style>
         * {
             box-sizing: border-box;
@@ -25,6 +25,10 @@
         
         h3 {
             font-size: 20px;
+        }
+
+        li {
+            list-style: none;
         }
 
         #nav {
@@ -75,7 +79,6 @@
         }
         .item__text {
             display: none;
-            list-style: none;
             font-size: 30px
         }
 
@@ -117,6 +120,7 @@
         
         .content_item-text {
             margin-top: 7px;
+            margin-bottom: 17px;
             font-size: 14px;
             font-weight: 700;
             color: #666666;
@@ -125,7 +129,6 @@
         .content_item-title {
             font-weight: 700;
             font-size: 20px;
-            margin-top: 15px;
         }
 
         .content__img {
@@ -133,6 +136,100 @@
             height: auto;
             border-radius: 9px;
             padding-right: 40px;
+        }
+
+        .content__click,
+        .content__img {
+            cursor: pointer;
+        }
+
+        /* 푸터 info및 어드레스 */
+        #footer {
+            width: 100%;
+            display: flex;
+            position: relative;
+            border-top: 1px solid #dcdde1;
+            color: #b1b1b1
+        }
+
+        .inner__footer {
+            padding: 0 60px;
+            padding-bottom: 20px;
+        }
+        
+        .list__info {
+            padding-top: 25px;
+            font-size: 12px;
+            font-weight: 700;
+            display: flex;
+        }
+
+        .link__footer {
+            color:#777;
+            text-align: center;
+        }
+
+        .link__footer:hover {
+            color:#333333
+        }
+
+        .link__footer::after {
+            content: "|";
+            margin: 0 7px;
+        }
+
+        .list__address {
+            font-size: 12px;
+            margin-top: 15px;
+            display: flex;
+        }
+
+        .list__address::after {
+            padding: 0 5px;
+            content: "| " " dudnqnfqlc@naver.com";
+        }
+
+        /* 푸터 관련사이트 */
+
+        .wrap__relation {
+            display: flex;
+            position: absolute;
+            top: 35%;
+            right: 9%;
+            font-size: 25px;
+        }
+        .icon__info {
+            display: flex;
+        }
+        .icon__info-items {
+            padding: 10px 30px 10px 0;
+        }
+
+        .icon__info-items > i {
+            cursor: pointer;
+        }
+        .btn_relation {
+            all:unset;
+            color:#777;
+            font-weight: 600;
+            font-size: 12px;
+            padding-top: 20px;
+            padding-bottom: 7px;
+            border-bottom: 1px solid black; 
+            cursor: pointer;
+        }
+
+        .btn_relation > i {
+            padding-left: 70px;
+
+        }
+
+        .btn_relation:hover {
+            color:black
+        }
+
+        .relation__site {
+            display: none;
         }
 
     </style>
@@ -175,45 +272,93 @@
         <content id="content">
             <div class="news content__item">
                 <p class="content_item-text" >NEWS</p>
-                <p class="content_item-title">코코아엔터프라이즈</p>
-                <P class="item__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, magnam?</P>
-            </div>
+                <div class="content__click">
+                        <p class="content_item-title">코코아엔터프라이즈</p>
+                        <P class="item__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, magnam?</P>
+                    </div>
+                </div>
 
             <div class="company content__item">
                 <p class="content_item-text">COMPANY</p>
-                <p class="content_item-title">Why not?</p>
-                <P class="item__desc">당연한 것들에 대한 도전</P>
+                <div class="content__click">
+                    <p class="content_item-title">Why not?</p>
+                    <P class="item__desc">당연한 것들에 대한 도전</P>
+                </div>
             </div>
 
             <div class="partnership content__item">
                 <p class="content_item-text">PARTNERSHIP</p>
-                <p class="content_item-title">코코아는 더 나은 미래를 향해 질주합니다.</p>
+                <div class="content__click">
+                        <p class="content_item-title">코코아는 더 나은 미래를 향해 질주합니다.</p>
+                </div>
             </div>
 
             <div class="service content__item">
                 <p class="content_item-text">SERVICE</p>
                 <img src="images/invite.jpg" class="content__img">
-                <p class="content_item-title">더 심플해진 일상으로의 초대</p>
-                <P class="item__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, magnam?</P>    
+                <div class="content__click">
+                    <p class="content_item-title">더 심플해진 일상으로의 초대</p>
+                    <P class="item__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, magnam?</P>    
+                </div>
             </div>
             
             <div class="tech content__item">
                 <p class="content_item-text">TECH</p>
                 <img src="images/carl-heyerdahl-KE0nC8-58MQ-unsplash.jpg" class="content__img">
-                <p class="content_item-title">코코아의 핵심기술, Kokoa B</p>
-                <P class="item__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, magnam?</P>    
+                <div class="content__click">
+                    <p class="content_item-title">코코아의 핵심기술, Kokoa B</p>
+                    <P class="item__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, magnam?</P>    
+                </div>
             </div>
 
             <div class="careers content__item">
                 <p class="content_item-text">CAREERS</p>
                 <img src="images/crew.jpg" class="content__img">
-                <p class="content_item-title">새로운 길을 개척할 크루를 기다립니다.</p>
-                <P class="item__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, magnam?</P>
+                <div class="content__click">
+                    <p class="content_item-title">새로운 길을 개척할 크루를 기다립니다.</p>
+                    <P class="item__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, magnam?</P>
+                </div>
              </div>
-
         </content>
     </section>
+
+    <footer id="footer">
+        <div class="inner__footer">
+            <ul class="list__info">
+                <li> <a href="#" class="link__footer" target="_blnack">개인정보처리방침</a> </il>
+                <li><a href="#" class="link__footer" target="_blnack">회사소식</a> </li>
+                <li><a href="#" class="link__footer" target="_blnack">오시는 길</a></li>
+                <li><a href="#" class="link__footer" target="_blnack">제휴문의</a></li>   
+                <li><a href="#" class="link__footer" target="_blnack">사이버 윤리실</a></li>
+            </ul>
+            <ul class="list__address">
+             <li>경기도 성남시 분당구 판교역로 235 에이치스퀘어 N동 (주)코코아엔터프라이즈</li>             
+            </ul>
+            <ul>
+            <small class="copyright">Copyright © Kakao Enterprise Corp. All rights reserved.</small>
+            </ul>
+            
+        <div class="wrap__relation">
+            <div class="icon__info">
+                <div class="icon__info-items blog"><i class="fab fa-blogger" color="#b1b1b1"></i></div>
+                <div class="icon__info-items facebook"><i class="fab fa-facebook"></i></div>
+                <div class="icon__info-items youtube"><i class="fab fa-youtube"></i></div>
+                <div class="icon__info-items instargram"><i class="fab fa-instagram"></i></div>
+            </div>
+               
+                <div class="bundle__site">
+                    <button class="btn_relation" type="button">관련사이트<i class="fas fa-caret-up"></i></button>
+                    <ul>
+                        <li class="relation__site">코코아 AI</li>
+                        <li class="relation__site">코코아 디벨로퍼스</li>
+                        <li class="relation__site">코코아 오픈 빌더</li>
+                        <li class="relation__site">카카오</li>
+                    </ul>
+                </div>
+        </div>
         
+    </footer>
+    <script defer src="https://kit.fontawesome.com/66fd1dbf65.js" crossorigin="anonymous"> </script>
 
 </body>
 </html>
