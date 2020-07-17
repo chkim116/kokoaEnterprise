@@ -106,8 +106,8 @@ li {
     display: block;
 }
 
-/* 영상 삽입 */
-#article {
+/* 메인 영상 */
+#main {
     position: relative;
     width: 100%;
     overflow: hidden;
