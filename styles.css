@@ -7,7 +7,9 @@
 
 body {
     min-width: 1440px;
+    max-width: 2560px;
 }
+
 
 a {
     text-decoration: none;
@@ -34,6 +36,7 @@ li {
     position: fixed;
     display: flex;
     justify-content: space-between;
+    max-width: 2560px;
     min-width: 1440px;
     width: 100%;
     line-height: 60px;
