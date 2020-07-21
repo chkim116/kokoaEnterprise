@@ -7,7 +7,6 @@
 
 body {
     min-width: 1440px;
-    max-width: 2560px;
 }
 
 
@@ -36,8 +35,6 @@ li {
     position: fixed;
     display: flex;
     justify-content: space-between;
-    max-width: 2560px;
-    min-width: 1440px;
     width: 100%;
     line-height: 60px;
     font-weight: 600;
@@ -61,7 +58,7 @@ li {
 }
 
 .navbar > a,
-.navright {
+.navright > span {
     text-decoration: none;
     padding: 16px 0;
 }
@@ -344,5 +341,44 @@ li {
 /* 미디어쿼리 */
 
 @media all and (max-width:768px) {
+    body {
+        min-width: 768px;
+    }
 
+    #nav {
+        width: 100%;
+    }
+
+    .navbar_menu,
+    .navright,
+    .navright > i {
+        display: none;
+    }
+
+    .fa-bars {
+        position: absolute;
+        top: 20px;
+        right: 80px;
+    }
+    
+    .title_text {
+        font-size: 18px;
+        line-height: 40px;
+    }
+
+    #content  {
+        flex-direction: column;
+        padding-bottom: 60px;
+    }
+
+    .content__item {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .content__item:nth-child(4),
+    .content__item:nth-child(5),
+    .content__item:nth-child(6) {
+    margin-top: 0px;
+    
+}
 }
