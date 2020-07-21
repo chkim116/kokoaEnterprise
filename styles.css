@@ -40,6 +40,7 @@ li {
     font-weight: 600;
     font-size: 16px;
     z-index: 1;
+    min-width: 1440px;
 }
 
 .logo {
@@ -63,6 +64,15 @@ li {
     padding: 16px 0;
 }
 
+.navright {
+    margin-right: 80px;    
+}
+
+.navright > i {
+    margin: 0;
+    width: fit-content;
+}
+
 .navbar > a:hover,
 .navright:hover {
     border-bottom: 2px solid blue;
@@ -83,6 +93,9 @@ li {
     margin-right: 80px;
 }
 
+.navbar__bars {
+    display: none;
+}
 /* 넷바 서브 */
 
 .wrap__sub {
@@ -304,7 +317,6 @@ li {
     position: relative;
 }
 
-
 .btn_relation > i {
     padding-left: 70px;
 
@@ -342,11 +354,11 @@ li {
 
 @media all and (max-width:768px) {
     body {
-        min-width: 768px;
+        min-width: 476px;
     }
 
     #nav {
-        width: 100%;
+        min-width: 476px;
     }
 
     .navbar_menu,
@@ -355,14 +367,19 @@ li {
         display: none;
     }
 
-    .fa-bars {
+    .navbar__bars {
         position: absolute;
-        top: 20px;
+        top: 0px;
         right: 80px;
+        display: block;
     }
     
+    .item__text {
+        left: 0;
+    }
+
     .title_text {
-        font-size: 18px;
+        font-size: 15px;
         line-height: 40px;
     }
 
@@ -379,6 +396,35 @@ li {
     .content__item:nth-child(5),
     .content__item:nth-child(6) {
     margin-top: 0px;
-    
+    }
+    .icon__info {
+        display: none;
+    }
+
+    .btn_relation {
+        display: none;
+    }
+
+    .list__info {
+        flex-direction: column;
+        line-height: 30px;
+    }
+
+    .link__footer::after {
+        display:none;
+    }
+
+    .list__address {
+        flex-direction: column;
+    }
+
+    .list__address::after {
+        display: none;
+    }
 }
+
+@media all and (max-width:476px) {
+    .title_text {
+        font-size: 12px;
+    }
 }
