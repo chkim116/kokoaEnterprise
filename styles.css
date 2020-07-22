@@ -353,16 +353,16 @@ li {
 /* 미디어쿼리 */
 
 @media all and (min-width:0px) and (max-width:476px) {
-    .title_text {
-        font-size: 12px;
-    }
 
-    .inner__video {
-        max-width: 768px;
+    #main {
+        padding-bottom:20%;
     }
-
     .logo {
         margin: 0 10px;
+    }
+
+    .iist__visual {
+        display: none;
     }
 
     .navbar__bars {
@@ -382,7 +382,9 @@ li {
     .list__address {
         padding: 0;
     }
-
+    .list__right {
+        padding: 0;
+    }
 }
 @media all and (max-width:768px) {
     body {
