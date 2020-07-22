@@ -354,11 +354,11 @@ li {
 
 @media all and (max-width:768px) {
     body {
-        min-width: 476px;
+        min-width: 300px;
     }
 
     #nav {
-        min-width: 476px;
+        min-width: 300px;
     }
 
     .navbar_menu,
@@ -423,8 +423,30 @@ li {
     }
 }
 
-@media all and (max-width:476px) {
+@media all and (min-width: 320px) and (max-width:476px) {
     .title_text {
         font-size: 12px;
+        width: fit-content;
     }
 }
+
+    .logo {
+        margin: 0 10px;
+    }
+
+    .navbar__bars {
+        right: 15px;
+    }
+
+    #content {
+        padding: 10px;
+    }
+
+    .inner__footer {
+        padding: 10px;
+    }
+    
+    .list__info,
+    .list__address {
+        padding: 0;
+    }
