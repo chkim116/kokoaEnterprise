@@ -385,6 +385,10 @@ li {
     .list__right {
         padding: 0;
     }
+
+    #footer {
+        padding: 0 10px;
+    }
 }
 @media all and (max-width:768px) {
     body {
