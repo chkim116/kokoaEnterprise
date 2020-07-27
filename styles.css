@@ -1,462 +1,347 @@
 * {
-    box-sizing: border-box;
-    letter-spacing: -0.25px;
-    font-family: 'Noto Sans KR', sans-serif;
-    margin: 0;
+  box-sizing: border-box;
+  letter-spacing: -0.25px;
+  font-family: "Noto Sans KR", sans-serif;
+  margin: 0;
 }
 
 body {
-    min-width: 1440px;
+  min-width: 1440px;
 }
 
-
 a {
-    text-decoration: none;
-    color: #353b48;
+  text-decoration: none;
+  color: #353b48;
 }
 
 b {
-    font-weight:700;
+  font-weight: 700;
 }
 
 h3 {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 li {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /* 넷바 */
 
 #nav {
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    line-height: 60px;
-    font-weight: 600;
-    font-size: 16px;
-    z-index: 1;
-    min-width: 1440px;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  line-height: 60px;
+  font-weight: 600;
+  font-size: 16px;
+  z-index: 1;
+  min-width: 1440px;
 }
 
 .logo {
-    margin-left: 80px;
-    font-size: 18px;
+  margin-left: 80px;
+  font-size: 18px;
 }
 
 .navbar_menu {
-    display: flex;
+  display: flex;
 }
 
 .navbar {
-    cursor: pointer;
-    text-align: center;
-    width: 135px;
+  cursor: pointer;
+  text-align: center;
+  width: 135px;
 }
 
 .navbar > a,
 .navright > span {
-    text-decoration: none;
-    padding: 16px 0;
+  text-decoration: none;
+  padding: 16px 0;
 }
 
 .navright {
-    margin-right: 80px;    
+  margin-right: 80px;
 }
 
 .navright > i {
-    margin: 0;
-    width: fit-content;
+  margin: 0;
+  width: fit-content;
 }
 
 .navbar > a:hover,
 .navright:hover {
-    border-bottom: 2px solid blue;
+  border-bottom: 2px solid blue;
 }
 
 .navbar__scroll {
-    background-color: #ffffff;
-    color: #333333;
-    transition: all 700ms ease;
+  background-color: #ffffff;
+  color: #333333;
+  transition: all 700ms ease;
 }
 
 .fa-arrow-alt-circle-right {
-    border-radius: 50%;
-    background-color: #3498db;
-    color:white;
-    border: 1px solid #3498db;
-    margin-left: 5px;
-    margin-right: 80px;
+  border-radius: 50%;
+  background-color: #3498db;
+  color: white;
+  border: 1px solid #3498db;
+  margin-left: 5px;
+  margin-right: 80px;
 }
 
 .navbar__bars {
-    display: none;
+  display: none;
 }
 /* 넷바 서브 */
 
 .wrap__sub {
-    display: none;
-    padding: 0;
-    padding-bottom: 30px;
+  display: none;
+  padding: 0;
+  padding-bottom: 30px;
 }
 
 .navbar__sub {
-    font-size: 13px;
-    text-align: center;
-    line-height: 40px;
+  font-size: 13px;
+  text-align: center;
+  line-height: 40px;
 }
 
 .navbar__sub > a:hover {
-    text-decoration: underline;
-    color: #3498db;
+  text-decoration: underline;
+  color: #3498db;
 }
 
 .wrap__sub.sub__showing {
-    display: block;
+  display: block;
 }
 
 /* 메인 영상 */
 #main {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    padding-top: 38.26%;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 38.26%;
 }
 
 .inner__video {
-    position: absolute;
-    top: 0;
-    z-index: -1;
-    height: auto;
-    width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  height: auto;
+  width: 100%;
 }
 
 .iist__visual {
-    position: absolute;
-    top: 33%;
-    left: 15%;
+  position: absolute;
+  top: 33%;
+  left: 15%;
 }
 
 .item__text {
-    width: 1000px;
-    opacity: 0;
-    top:0;
-    font-size: 30px;
-    position: absolute;
-    animation-name: text;
+  width: 1000px;
+  opacity: 0;
+  top: 0;
+  font-size: 30px;
+  position: absolute;
+  animation-name: text;
 }
 
 .text__visual {
-    font-size: 30px;
-    top:0;
-    transform: translateY(0px);
-    animation-name: moving;
-    animation-duration: 4000ms;
-    z-index: 0;
+  font-size: 30px;
+  top: 0;
+  transform: translateY(0px);
+  animation-name: moving;
+  animation-duration: 4000ms;
+  z-index: 0;
 }
 
 @keyframes moving {
-    0% {
-        opacity: 0;
-        transform: translateY(60px);
-    }
-    60% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-    100% {
-        opacity: 0;
-        transform: translateY(-60px);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
 }
 
 .title_text {
-    line-height: 80px;
-    font-weight: 900;
-    color: #353b48;
-    text-shadow: 0.5px 0.7px black;
+  line-height: 80px;
+  font-weight: 900;
+  color: #353b48;
+  text-shadow: 0.5px 0.7px black;
 }
 
 /* 컨텐츠 */
 
 #content {
-    width: 100%;
-    padding: 30px 80px 160px 80px;
-    max-width: 1920px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0 auto;
+  width: 100%;
+  padding: 30px 80px 160px 80px;
+  max-width: 1920px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
 }
 
 .content__item {
-    width: 31%;
-    display: flex;
-    flex-direction: column;
-    
+  width: 31%;
+  display: flex;
+  flex-direction: column;
 }
 
 .content__item:nth-child(4),
 .content__item:nth-child(5),
 .content__item:nth-child(6) {
-    margin-top: 60px;
-    
+  margin-top: 60px;
 }
 
 .item__desc {
-    font-size: 15px;
-    margin-top: 12px;
+  font-size: 15px;
+  margin-top: 12px;
 }
 
 .content_item-text {
-    margin: 7px 0;
-    font-size: 14px;
-    font-weight: 700;
-    color: #666666;
+  margin: 7px 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: #666666;
 }
 
 .content_item-title {
-    font-weight: 700;
-    font-size: 20px;
+  font-weight: 700;
+  font-size: 20px;
 }
 
 .content__img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-    border-radius: 9px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 9px;
 }
 
 .content__click,
 .content__img {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 /* 푸터 info및 어드레스 */
 #footer {
-    width: 100%;
-    display: flex;
-    position: relative;
-    border-top: 1px solid #dcdde1;
-    color: #b1b1b1;
+  width: 100%;
+  display: flex;
+  position: relative;
+  border-top: 1px solid #dcdde1;
+  color: #b1b1b1;
 }
 
 .inner__footer {
-    padding: 0 60px;
-    padding-bottom: 10px;
-    margin:0px;
+  padding: 0 60px;
+  padding-bottom: 10px;
+  margin: 0px;
 }
 
 .list__info {
-    padding-top: 15px;
-    font-size: 12px;
-    font-weight: 700;
-    display: flex;
+  padding-top: 15px;
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
 }
 
 .link__footer {
-    color:#777;
+  color: #777;
 }
 
 .link__footer:hover {
-    color:#333333
+  color: #333333;
 }
 
 .link__footer::after {
-    content: "|";
-    margin: 0 6px;
+  content: "|";
+  margin: 0 6px;
 }
 
 .list__address {
-    font-size: 12px;
-    margin-top: 15px;
-    display: flex;
+  font-size: 12px;
+  margin-top: 15px;
+  display: flex;
 }
 
 .list__address::after {
-    padding: 0 5px;
-    content: "| " " dudnqnfqlc@naver.com";
+  padding: 0 5px;
+  content: "| " " dudnqnfqlc@naver.com";
 }
 
 /* 푸터 관련사이트 */
 
 .wrap__relation {
-    display: flex;
-    position: absolute;
-    top: 35%;
-    right: 7%;
-    font-size: 25px;
+  display: flex;
+  position: absolute;
+  top: 35%;
+  right: 7%;
+  font-size: 25px;
 }
- 
+
 .icon__info {
-    display: flex;
+  display: flex;
 }
 .icon__info-items {
-    padding: 10px 30px 10px 0;
+  padding: 10px 30px 10px 0;
 }
 
 .icon__info-items > i {
-    cursor: pointer;
+  cursor: pointer;
 }
 .btn_relation {
-    background-color: #ffffff;
-    outline: none;
-    border: none;
-    color:#777;
-    font-weight: 600;
-    font-size: 12px;
-    padding-top: 20px;
-    margin-left: 20PX;
-    padding-bottom: 7px;
-    border-bottom: 1px solid black; 
-    cursor: pointer;
-    position: relative;
+  background-color: #ffffff;
+  outline: none;
+  border: none;
+  color: #777;
+  font-weight: 600;
+  font-size: 12px;
+  padding-top: 20px;
+  margin-left: 20px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+  position: relative;
 }
 
 .btn_relation > i {
-    padding-left: 70px;
-
+  padding-left: 70px;
 }
 
 .btn_relation:hover {
-    color:black
+  color: black;
 }
 
 .relation__list {
-    border: 1px solid #d4d4d4;
-    position: absolute;
-    font-weight: 600;
-    color:#777;
-    top:-300%;
-    right: 4%;
-    text-align: left;
-    padding: 5px 11px;
-    background-color: #ffffff;
-    display: none;
+  border: 1px solid #d4d4d4;
+  position: absolute;
+  font-weight: 600;
+  color: #777;
+  top: -300%;
+  right: 4%;
+  text-align: left;
+  padding: 5px 11px;
+  background-color: #ffffff;
+  display: none;
 }
 
 .relation__list.showing {
-    display: block;
+  display: block;
 }
 
 .relation__site {
-    font-size: 12px;
-    line-height: 30px;
-    padding-right: 14px;
-    color:#333333;
-}
-
-/* 미디어쿼리 */
-
-@media all and (min-width:0px) and (max-width:476px) {
-
-    #main {
-        padding-bottom:20%;
-    }
-    .logo {
-        margin: 0 10px;
-    }
-
-    .iist__visual {
-        display: none;
-    }
-
-    .navbar__bars {
-        position: absolute;
-        right: 10%;
-    }
-
-    #content {
-        padding: 10px;
-    }
-
-    .inner__footer {
-        padding: 10px;
-    }
-    
-    .list__info,
-    .list__address {
-        padding: 0;
-    }
-    .list__right {
-        padding: 0;
-    }
-
-    #footer {
-        padding: 0 10px;
-    }
-}
-@media all and (max-width:768px) {
-    body {
-        min-width: 300px;
-    }
-
-    #nav {
-        min-width: 300px;
-    }
-
-    .navbar_menu,
-    .navright,
-    .navright > i {
-        display: none;
-    }
-
-    .navbar__bars {
-        position: absolute;
-        top: 0px;
-        right: 10%;
-        display: block;
-    }
-    
-    .item__text {
-        left: 0;
-    }
-
-    .title_text {
-        font-size: 15px;
-        line-height: 40px;
-    }
-
-    #content  {
-        flex-direction: column;
-        padding-bottom: 60px;
-    }
-
-    .content__item {
-        width: 100%;
-        margin-bottom: 30px;
-    }
-    .content__item:nth-child(4),
-    .content__item:nth-child(5),
-    .content__item:nth-child(6) {
-    margin-top: 0px;
-    }
-    .icon__info {
-        display: none;
-    }
-
-    .btn_relation {
-        display: none;
-    }
-
-    .list__info {
-        flex-direction: column;
-        line-height: 30px;
-    }
-
-    .link__footer::after {
-        display:none;
-    }
-
-    .list__address {
-        flex-direction: column;
-    }
-
-    .list__address::after {
-        display: none;
-    }
+  font-size: 12px;
+  line-height: 30px;
+  padding-right: 14px;
+  color: #333333;
 }
